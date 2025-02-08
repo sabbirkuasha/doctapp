@@ -11,7 +11,9 @@
   "address",
   "column_break_ojxc",
   "is_published",
-  "route"
+  "route",
+  "section_break_bwpb",
+  "doctor"
  ],
  "fields": [
   {
@@ -41,13 +43,23 @@
   {
    "fieldname": "column_break_ojxc",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bwpb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Doctor"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-02-08 12:29:31.834875",
+ "modified": "2025-02-08 23:49:47.246686",
  "modified_by": "Administrator",
  "module": "Doctapp",
  "name": "Clinic",

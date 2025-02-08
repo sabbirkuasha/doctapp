@@ -2,10 +2,10 @@
 # For license information, please see license.txt
 
 # import frappe
-from frappe.website.website_generator import WebsiteGenerator
+from frappe.model.document import Document
 
 
-class Clinic(WebsiteGenerator):
+class DoctorShift(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,11 +14,11 @@ class Clinic(WebsiteGenerator):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		address: DF.SmallText | None
-		contact_number: DF.Data
-		doctor: DF.Link | None
-		is_published: DF.Check
-		route: DF.Data | None
+		end_time: DF.Time | None
+		parent: DF.Data
+		parentfield: DF.Data
+		parenttype: DF.Data
+		start_time: DF.Time | None
 	# end: auto-generated types
 
 	pass
