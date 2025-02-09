@@ -1,53 +1,48 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:title",
- "creation": "2025-02-09 00:45:10.342752",
+ "creation": "2025-02-09 18:04:43.695472",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "start_time",
-  "end_time",
-  "clinic",
-  "title"
+  "starttime",
+  "endtime",
+  "title",
+  "clinic"
  ],
  "fields": [
   {
-   "fieldname": "start_time",
+   "fieldname": "starttime",
    "fieldtype": "Time",
    "in_list_view": 1,
-   "label": "Start Time",
+   "label": "StartTime",
    "reqd": 1
   },
   {
-   "fieldname": "end_time",
+   "fieldname": "endtime",
    "fieldtype": "Time",
    "in_list_view": 1,
-   "label": "End Time",
-   "reqd": 1
-  },
-  {
-   "fieldname": "clinic",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Clinic",
-   "options": "Clinic",
+   "label": "EndTime",
    "reqd": 1
   },
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title",
-   "unique": 1
+   "label": "Title"
+  },
+  {
+   "fieldname": "clinic",
+   "fieldtype": "Link",
+   "label": "Clinic",
+   "options": "Clinic"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-09 00:48:37.869393",
+ "modified": "2025-02-09 18:06:57.069476",
  "modified_by": "Administrator",
  "module": "Doctapp",
  "name": "Schedule Shift",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
