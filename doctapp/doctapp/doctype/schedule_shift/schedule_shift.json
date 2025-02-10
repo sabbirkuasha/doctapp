@@ -34,12 +34,13 @@
    "fieldname": "clinic",
    "fieldtype": "Link",
    "label": "Clinic",
-   "options": "Clinic"
+   "options": "Clinic",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-09 18:06:57.069476",
+ "modified": "2025-02-09 22:09:06.793448",
  "modified_by": "Administrator",
  "module": "Doctapp",
  "name": "Schedule Shift",

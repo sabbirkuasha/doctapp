@@ -4,6 +4,11 @@
 <h1>{{ title |e }}</h1>
 
 <hr>
+{% set shifts2 = frappe.get_list("Schedule Shift", filters={"clinic": doc.name}, fields=["starttime","endtime", "title", "clinic"])%}
+<p>The variable is: {{ shifts2 }}</p>
+
+
+<hr>
 <a href="/clinics" class="btn btn-primary"> List Clinics</a>
 <hr>
 
@@ -22,16 +27,21 @@
 <hr>
 
 
+
+
+{% set shifts = frappe.get_doc("Doctor", doc.doctor)%}
 <p><strong>Doctor's Availability: </strong></p>
-{% for shift in doctor.table_gocb%}
+{% for shift in shifts2%}
+    <h6>Shift: <pre class="">{{shift.title}}</pre></h6>
     <p>From 
-        <strong>{{shift.start_time}}</strong>  to 
-        <strong>{{shift.end_time}}</strong>
+        <strong>{{shift.starttime}}</strong>  to 
+        <strong>{{shift.endtime}}</strong>
     </p>
+    <hr>
 {% endfor %}
 
 
-<a href="#" class="btn btn-info"> Book Appointmentt</a>
+<a href="/book-appointment/new?clinic={{doc.name}}" class="btn btn-info"> Book Appointmentt</a>
 {% endblock %}
 
 <!-- this is a sample default web page template -->

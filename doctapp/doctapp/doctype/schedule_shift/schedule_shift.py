@@ -14,7 +14,7 @@ class ScheduleShift(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		clinic: DF.Link | None
+		clinic: DF.Link
 		endtime: DF.Time
 		starttime: DF.Time
 		title: DF.Data | None
