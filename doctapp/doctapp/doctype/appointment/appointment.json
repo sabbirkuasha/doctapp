@@ -14,7 +14,8 @@
   "queue_number",
   "column_break_hsya",
   "contact_number",
-  "clinic"
+  "clinic",
+  "shift"
  ],
  "fields": [
   {
@@ -80,12 +81,21 @@
   {
    "fieldname": "column_break_hsya",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shift",
+   "options": "Schedule Shift",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-09 00:42:03.543657",
+ "modified": "2025-02-11 02:35:36.896361",
  "modified_by": "Administrator",
  "module": "Doctapp",
  "name": "Appointment",
@@ -107,6 +117,7 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "clinic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],

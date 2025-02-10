@@ -20,6 +20,7 @@ class Appointment(Document):
 		date: DF.Date
 		patient_name: DF.Data
 		queue_number: DF.Int
+		shift: DF.Link
 	# end: auto-generated types
 
 	pass
